@@ -1,3 +1,4 @@
+import { Task } from './../task';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
+  task: Task = {
+    id: 1,
+    name: 'Task 1'
+  };
 
   constructor() { }
 
